@@ -14,7 +14,7 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-JC-zvl">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="509" id="dfh-Bc-qeL"/>
+                                    <constraint firstAttribute="height" constant="554" id="pBK-Wm-Iac"/>
                                 </constraints>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip4-3Z-4T0">
@@ -36,9 +36,9 @@
                         <constraints>
                             <constraint firstItem="nRt-JC-zvl" firstAttribute="top" secondItem="4Ca-Ba-j5j" secondAttribute="top" type="default" id="1aN-d8-5TY"/>
                             <constraint firstItem="ip4-3Z-4T0" firstAttribute="leading" secondItem="4Ca-Ba-j5j" secondAttribute="leading" type="default" id="3xU-f1-CIi"/>
+                            <constraint firstItem="ip4-3Z-4T0" firstAttribute="bottom" secondItem="4Ca-Ba-j5j" secondAttribute="bottom" type="default" id="F6k-4P-vOC"/>
                             <constraint firstItem="ip4-3Z-4T0" firstAttribute="trailing" secondItem="4Ca-Ba-j5j" secondAttribute="trailing" type="default" id="MKa-P8-FBa"/>
                             <constraint firstItem="nRt-JC-zvl" firstAttribute="leading" secondItem="4Ca-Ba-j5j" secondAttribute="leading" type="default" id="ig2-2T-rVO"/>
-                            <constraint firstItem="ip4-3Z-4T0" firstAttribute="top" secondItem="nRt-JC-zvl" secondAttribute="bottom" type="default" id="mlt-yx-GVO"/>
                             <constraint firstItem="nRt-JC-zvl" firstAttribute="trailing" secondItem="4Ca-Ba-j5j" secondAttribute="trailing" type="default" id="o2b-SK-9L9"/>
                         </constraints>
                     </view>
@@ -52,20 +52,6 @@
             <point key="canvasLocation" x="61" y="48"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="BWNewJlrViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BWNewJlrViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addButton:"/>
-                <relationship kind="action" name="clearAll:"/>
-                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="theMap" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

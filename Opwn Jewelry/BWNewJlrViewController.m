@@ -31,6 +31,7 @@
     [self startLocationServices:YES];
     [theMap setDelegate:self];
     [self restart];
+    jlr = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +44,7 @@
 {
     if (!jlr) {
         [self restart];
-        
+        [theMap setCenterCoordinate:lManager.location.coordinate];
     }
     else
     {
@@ -83,6 +84,8 @@
     [jlr addNewJlrPoint:lManager.location];
     [self drawLines];
     [addButton setEnabled:NO];
+    [theMap setCenterCoordinate:lManager.location.coordinate];
+
 
 }
 
@@ -146,6 +149,7 @@
 
 - (IBAction)clearAll:(id)sender {
     [self restart];
+    [theMap removeOverlays:theMap.overlays];
     
 }
 
