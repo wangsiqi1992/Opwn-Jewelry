@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C2034" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FpW-h7-iFI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--New Jlr View Controller-->
+        <scene sceneID="jU7-dP-fQ2">
+            <objects>
+                <viewController id="FpW-h7-iFI" customClass="BWNewJlrViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Ca-Ba-j5j">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-JC-zvl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="509" id="dfh-Bc-qeL"/>
+                                </constraints>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip4-3Z-4T0">
+                                <items>
+                                    <barButtonItem title="Add this place!" id="bNz-Va-0jp">
+                                        <connections>
+                                            <action selector="addButton:" destination="FpW-h7-iFI" id="lOZ-O0-LqS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Clear All" id="mV5-CP-7fp">
+                                        <connections>
+                                            <action selector="clearAll:" destination="FpW-h7-iFI" id="5lR-Lp-byh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nRt-JC-zvl" firstAttribute="top" secondItem="4Ca-Ba-j5j" secondAttribute="top" type="default" id="1aN-d8-5TY"/>
+                            <constraint firstItem="ip4-3Z-4T0" firstAttribute="leading" secondItem="4Ca-Ba-j5j" secondAttribute="leading" type="default" id="3xU-f1-CIi"/>
+                            <constraint firstItem="ip4-3Z-4T0" firstAttribute="trailing" secondItem="4Ca-Ba-j5j" secondAttribute="trailing" type="default" id="MKa-P8-FBa"/>
+                            <constraint firstItem="nRt-JC-zvl" firstAttribute="leading" secondItem="4Ca-Ba-j5j" secondAttribute="leading" type="default" id="ig2-2T-rVO"/>
+                            <constraint firstItem="ip4-3Z-4T0" firstAttribute="top" secondItem="nRt-JC-zvl" secondAttribute="bottom" type="default" id="mlt-yx-GVO"/>
+                            <constraint firstItem="nRt-JC-zvl" firstAttribute="trailing" secondItem="4Ca-Ba-j5j" secondAttribute="trailing" type="default" id="o2b-SK-9L9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="bNz-Va-0jp" id="LhQ-fu-mpc"/>
+                        <outlet property="theMap" destination="nRt-JC-zvl" id="d3G-66-Rg5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjo-JF-Zr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="48"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

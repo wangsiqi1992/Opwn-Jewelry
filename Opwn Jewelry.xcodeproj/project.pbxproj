@@ -18,6 +18,11 @@
 		FABBB79316BE8F49009496C6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FABBB79216BE8F49009496C6 /* Default@2x.png */; };
 		FABBB79516BE8F49009496C6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FABBB79416BE8F49009496C6 /* Default-568h@2x.png */; };
 		FABBB79816BE8F49009496C6 /* Opwn_Jewelry.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABBB79616BE8F49009496C6 /* Opwn_Jewelry.xcdatamodeld */; };
+		FABBB79F16BE90EA009496C6 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABBB79E16BE90EA009496C6 /* Storyboard.storyboard */; };
+		FABBB7A116BE9179009496C6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABBB7A016BE9179009496C6 /* MapKit.framework */; };
+		FABBB7A416BE963D009496C6 /* BWJlr.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBB7A316BE963D009496C6 /* BWJlr.m */; };
+		FABBB7A716BEB16C009496C6 /* BWNewJlrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FABBB7A616BEB16C009496C6 /* BWNewJlrViewController.m */; };
+		FABBB7A916BEBADF009496C6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FABBB7A816BEBADF009496C6 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,13 @@
 		FABBB79216BE8F49009496C6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FABBB79416BE8F49009496C6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FABBB79716BE8F49009496C6 /* Opwn_Jewelry.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Opwn_Jewelry.xcdatamodel; sourceTree = "<group>"; };
+		FABBB79E16BE90EA009496C6 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = ../Storyboard.storyboard; sourceTree = "<group>"; };
+		FABBB7A016BE9179009496C6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FABBB7A216BE963D009496C6 /* BWJlr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWJlr.h; path = ../BWJlr.h; sourceTree = "<group>"; };
+		FABBB7A316BE963D009496C6 /* BWJlr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWJlr.m; path = ../BWJlr.m; sourceTree = "<group>"; };
+		FABBB7A516BEB16C009496C6 /* BWNewJlrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWNewJlrViewController.h; sourceTree = "<group>"; };
+		FABBB7A616BEB16C009496C6 /* BWNewJlrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWNewJlrViewController.m; sourceTree = "<group>"; };
+		FABBB7A816BEBADF009496C6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABBB7A916BEBADF009496C6 /* CoreLocation.framework in Frameworks */,
+				FABBB7A116BE9179009496C6 /* MapKit.framework in Frameworks */,
 				FABBB77D16BE8F49009496C6 /* UIKit.framework in Frameworks */,
 				FABBB77F16BE8F49009496C6 /* Foundation.framework in Frameworks */,
 				FABBB78116BE8F49009496C6 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +87,8 @@
 		FABBB77B16BE8F49009496C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FABBB7A816BEBADF009496C6 /* CoreLocation.framework */,
+				FABBB7A016BE9179009496C6 /* MapKit.framework */,
 				FABBB77C16BE8F49009496C6 /* UIKit.framework */,
 				FABBB77E16BE8F49009496C6 /* Foundation.framework */,
 				FABBB78016BE8F49009496C6 /* CoreGraphics.framework */,
@@ -84,6 +100,11 @@
 		FABBB78416BE8F49009496C6 /* Opwn Jewelry */ = {
 			isa = PBXGroup;
 			children = (
+				FABBB7A216BE963D009496C6 /* BWJlr.h */,
+				FABBB7A316BE963D009496C6 /* BWJlr.m */,
+				FABBB79E16BE90EA009496C6 /* Storyboard.storyboard */,
+				FABBB7A516BEB16C009496C6 /* BWNewJlrViewController.h */,
+				FABBB7A616BEB16C009496C6 /* BWNewJlrViewController.m */,
 				FABBB78D16BE8F49009496C6 /* BWAppDelegate.h */,
 				FABBB78E16BE8F49009496C6 /* BWAppDelegate.m */,
 				FABBB79616BE8F49009496C6 /* Opwn_Jewelry.xcdatamodeld */,
@@ -162,6 +183,7 @@
 				FABBB79116BE8F49009496C6 /* Default.png in Resources */,
 				FABBB79316BE8F49009496C6 /* Default@2x.png in Resources */,
 				FABBB79516BE8F49009496C6 /* Default-568h@2x.png in Resources */,
+				FABBB79F16BE90EA009496C6 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +197,8 @@
 				FABBB78B16BE8F49009496C6 /* main.m in Sources */,
 				FABBB78F16BE8F49009496C6 /* BWAppDelegate.m in Sources */,
 				FABBB79816BE8F49009496C6 /* Opwn_Jewelry.xcdatamodeld in Sources */,
+				FABBB7A416BE963D009496C6 /* BWJlr.m in Sources */,
+				FABBB7A716BEB16C009496C6 /* BWNewJlrViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
