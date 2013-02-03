@@ -146,7 +146,7 @@
 
 - (IBAction)clearAll:(id)sender {
     [self restart];
-    theMap remove
+    
 }
 
 
